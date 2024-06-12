@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image gallery</title>
+  </head>
+  <body>
+    <!-- GLOBAL CONTAINER -->
+    <div
+      class="flex items-center justify-center min-h-screen bg-cyan-50 overflow-hidden"
+    >
+      <!-- card Container -->
+      <div class="rounded-3xl bg-white p-6 m-3 space-y-10 shadow-2xl md:p-40">
+        <!-- MENUE CONTAINER -->
+        <div
+          class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:justify-end"
+        >
+          <!-- menue items -->
+          <div class="group">
+            <div class="relative">
+              <a href="#">Vector</a>
+              <div
+                class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="relative">
+              <a href="#">Illustration</a>
+              <div
+                class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="relative">
+              <a href="#">Images</a>
+              <div
+                class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="relative">
+              <a href="#">Icons</a>
+              <div
+                class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search container -->
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+        >
+          <!-- INPUT AND SVG CONTAINER -->
+          <div class="flex justify-between border-b">
+            <input
+              type="text"
+              class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none"
+              placeholder="Search"
+            />
+            <button></button>
+          </div>
+
+          <div class=""></div>
+
+          <!-- UPLOAD BUTTON -->
+          <button
+            class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover-text-black"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!--GALLERY CONTAINER -->
+        <div
+          class="columns-2 gap-3 w-full image-box md:columns-3 lg:columns-4 xl:columns-5 overflow-hidden"
+        >
+          <!-- <div class="break-inside-avoid">
+            <img src="img/image1.jpg" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
